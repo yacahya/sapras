@@ -28,16 +28,30 @@ class LaporanController extends Controller
 
     public function simpan(Request $request)
     {
+        $request->validate([
+            'id_instansi' => 'required',
+            'id_alat' => 'required',
+            'id_kondisi' => 'required',
+            'foto_bukti' => 'required|image|mimes:jpg,png,jpeg|max:5120',
+            'keterangan' => 'required|string|max:255'
+        ]);
+
+        if ($request->file('foto_bukti')) {
+            $file = $request->file('foto_bukti');
+            $filename = date('YmdHi') . "laporan" . $file->getClientOriginalName();
+            $file->storeAs('public/uploads/images/laporan/', $filename);
+        }
+
         $data = Laporan::create([
             "tanggal" => Carbon::now(),
             "id_user" => Auth()->user()->id,
             "id_instansi" => $request->id_instansi,
             "id_alat" => $request->id_alat,
             "id_kondisi" => $request->id_kondisi,
-            "foto" => 'dasuidsa',
+            "foto" => $filename,
             "keterangan" => $request->keterangan,
+            "status" => 1,
         ]);
-        return redirect()->back();
         return redirect()->route('laporan-tambah')->withSuccess('Data Berhasil Dikirim');
     }
 }

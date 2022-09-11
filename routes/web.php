@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
+Route::post('/profile', 'ProfileController@updateImage')->name('profile.update-image');
 
 Route::get('/instansi', 'InstansiController@index')->name('instansi');
 Route::get('/instansi/create', 'InstansiController@create')->name('instansi.create');
@@ -36,9 +37,9 @@ Route::get('/about', function () {
 })->name('about');
 
 
-Route::get('/laporan', 'LaporanController@index');
+Route::get('/laporan', 'LaporanController@index')->name('laporan');
 
-Route::get('/laporan-tambah', 'LaporanController@tambah');
+Route::get('/laporan-tambah', 'LaporanController@tambah')->name('laporan-tambah');
 Route::post('/laporan-tambah', 'LaporanController@simpan');
 
 Route::get('/laporan-riwayat', 'LaporanController@riwayat');

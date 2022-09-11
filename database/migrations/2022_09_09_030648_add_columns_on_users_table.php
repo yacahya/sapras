@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string("nik")->after("id")->nullable();
-            $table->string("alamat")->after("id")->nullable();
-            $table->string("temp_lahir")->after("id")->nullable();
-            $table->string("tgl_lahir")->after("id")->nullable();
-            $table->string("no_hp")->after("id")->nullable();
+            $table->string("no_hp")->after("email")->nullable();
+            $table->string("nik")->after("no_hp")->nullable();
+            $table->string("temp_lahir")->after("nik")->nullable();
+            $table->string("tgl_lahir")->after("temp_lahir")->nullable();
+            $table->string("alamat")->after("tgl_lahir")->nullable();
         });
     }
 
@@ -29,6 +29,12 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn("no_hp");
+            $table->dropColumn("nik");
+            $table->dropColumn("temp_lahir");
+            $table->dropColumn("tgl_lahir");
+            $table->dropColumn("alamat");
+        });
     }
 };

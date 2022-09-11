@@ -23,7 +23,8 @@
                     <div class="row">
                         <div class="col-lg-10">
                             <div class="form-group row">
-                                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal</label>
+                                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <h3>{{ Carbon\Carbon::now()->format('d-m-Y') }}</h3>
                                 </div>
@@ -34,14 +35,16 @@
                                 @enderror
                             </div>
                             <div class="form-group row">
-                                <label for="nama" class="col-sm-2 col-form-label">Nama Pelapor</label>
+                                <label for="nama" class="col-sm-2 col-form-label">Nama Pelapor<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <input class="form-control" type="text" value="{{ Auth()->user()->name }}" readonly>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="name" class="col-sm-2 col-form-label">Instansi</label>
+                                <label for="name" class="col-sm-2 col-form-label">Instansi<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" type="text" name="id_instansi">
                                         <option value="">-- Pilih kecamatan --</option>
@@ -52,7 +55,8 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="nama_alat" class="col-sm-2 col-form-label">Nama Alat</label>
+                                <label for="nama_alat" class="col-sm-2 col-form-label">Nama Alat<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" type="text" name="id_alat">
                                         <option value="">-- Pilih alat --</option>
@@ -64,7 +68,8 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="kondisi" class="col-sm-2 col-form-label">Kondisi</label>
+                                <label for="kondisi" class="col-sm-2 col-form-label">Kondisi<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" type="text" name="id_kondisi">
                                         <option value="">-- Pilih Kondisi --</option>
@@ -75,16 +80,17 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-sm-2">Picture</div>
+                                <div class="col-sm-2">Foto<span class="small text-danger">*</span></div>
                                 <div class="col-sm-10">
-
-                                    <input class="form-control" type="file" name="foto">
+                                    <input class="form-control" type="file" name="foto_bukti">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="keterangan" class="col-sm-2 col-form-label">Keterangan</label>
+                                <label for="keterangan" class="col-sm-2 col-form-label">Keterangan<span
+                                        class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" type="text" name="keterangan" placeholder="Keterangan" rows="3"></textarea>
+                                    <textarea class="form-control" type="text" name="keterangan"
+                                        placeholder="Keterangan" rows="3"></textarea>
                                     @error('keterangan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

@@ -29,7 +29,15 @@
 
         <div class="card shadow mb-4">
             <div class="card-profile-image mt-4">
-                <figure class="rounded-circle avatar avatar font-weight-bold" style="font-size: 60px; height: 180px; width: 180px;" data-initial="{{ Auth::user()->name[0] }}"></figure>
+                @if(Auth::user()->image == NULL)
+                <figure class="rounded-circle avatar avatar font-weight-bold"
+                    style="font-size: 60px; height: 180px; width: 180px;" data-initial="{{ Auth::user()->name[0] }}">
+                </figure>
+                @else
+                <img src="{{asset('storage/uploads/images/profile')}}/{{Auth::user()->image}}"
+                    class="rounded-circle avatar avatar font-weight-bold"
+                    style="font-size: 60px; height: 180px; width: 180px;" />
+                @endif
             </div>
             <div class="card-body">
 
@@ -47,7 +55,8 @@
                             </p>
                             <p>NIK : {{ Auth::user()->nik }}</p>
                         </div>
-                        <form method="post" action="" enctype="multipart/form-data" class=" form-horizontal">
+                        <form method="POST" action="{{ route('profile.update-image') }}" enctype="multipart/form-data"
+                            class=" form-horizontal">
                             @csrf
                             <input type="file" name="image" class="form-control">
                             <button type="submit" class="btn btn-primary btn-block"><b>Ganti Foto Profil</b></a>
@@ -76,14 +85,17 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group focused">
-                                    <label class="form-control-label" for="name">Name<span class="small text-danger">*</span></label>
-                                    <input type="text" id="name" class="form-control" name="name" placeholder="Name" value="{{ old('name', Auth::user()->name) }}">
+                                    <label class="form-control-label" for="name">Name<span
+                                            class="small text-danger">*</span></label>
+                                    <input type="text" id="name" class="form-control" name="name" placeholder="Name"
+                                        value="{{ old('name', Auth::user()->name) }}">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="last_name">Last name</label>
-                                    <input type="text" id="last_name" class="form-control" name="last_name" placeholder="Last name" value="{{ old('last_name', Auth::user()->last_name) }}">
+                                    <input type="text" id="last_name" class="form-control" name="last_name"
+                                        placeholder="Last name" value="{{ old('last_name', Auth::user()->last_name) }}">
                                 </div>
                             </div>
                         </div>
@@ -91,15 +103,20 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group focused">
-                                    <label class="form-control-label" for="nik">NIK<span class="small text-danger">*</span></label>
-                                    <input type="text" id="nik" class="form-control" name="email" placeholder="" value="{{ old('nik', Auth::user()->nik) }}">
+                                    <label class="form-control-label" for="nik">NIK<span
+                                            class="small text-danger">*</span></label>
+                                    <input type="text" id="nik" class="form-control" name="nik" placeholder=""
+                                        value="{{ old('nik', Auth::user()->nik) }}">
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group focused">
-                                    <label class="form-control-label" for="email">Email<span class="small text-danger">*</span></label>
-                                    <input type="email" id="email" class="form-control" name="email" placeholder="example@example.com" value="{{ old('email', Auth::user()->email) }}">
+                                    <label class="form-control-label" for="email">Email<span
+                                            class="small text-danger">*</span></label>
+                                    <input type="email" id="email" class="form-control" name="email"
+                                        placeholder="example@example.com"
+                                        value="{{ old('email', Auth::user()->email) }}">
                                 </div>
                             </div>
                         </div>
@@ -108,13 +125,15 @@
                             <div class="col-lg-6">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="temp_lahir">Tempat Lahir</label>
-                                    <input type="text" id="temp_lahir" class="form-control" name="temp_lahir" placeholder="" value="{{ old('temp_lahir', Auth::user()->temp_lahir) }}">
+                                    <input type="text" id="temp_lahir" class="form-control" name="temp_lahir"
+                                        placeholder="" value="{{ old('temp_lahir', Auth::user()->temp_lahir) }}">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="tgl_lahir">Tanggal Lahir</label>
-                                    <input type="date" id="tgl_lahir" class="form-control" name="tgl_lahir" placeholder="" value="{{ old('tgl_lahir', Auth::user()->tgl_lahir) }}">
+                                    <input type="date" id="tgl_lahir" class="form-control" name="tgl_lahir"
+                                        placeholder="" value="{{ old('tgl_lahir', Auth::user()->tgl_lahir) }}">
                                 </div>
                             </div>
                         </div>
@@ -122,8 +141,10 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label class="form-control-label" for="alamat">Alamat<span class="small text-danger">*</span></label>
-                                    <textarea type="text" id="alamat" class="form-control" name="alamat" placeholder="Alamat" value="{{ old('alamat', Auth::user()->address) }}"></textarea>
+                                    <label class="form-control-label" for="alamat">Alamat<span
+                                            class="small text-danger">*</span></label>
+                                    <textarea type="text" id="alamat" class="form-control" name="alamat"
+                                        placeholder="Alamat">{{ old('alamat', Auth::user()->alamat) }}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -133,19 +154,22 @@
                             <div class="col-lg-4">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="current_password">Current password</label>
-                                    <input type="password" id="current_password" class="form-control" name="current_password" placeholder="Current password">
+                                    <input type="password" id="current_password" class="form-control"
+                                        name="current_password" placeholder="Current password">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="new_password">New password</label>
-                                    <input type="password" id="new_password" class="form-control" name="new_password" placeholder="New password">
+                                    <input type="password" id="new_password" class="form-control" name="new_password"
+                                        placeholder="New password">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group focused">
                                     <label class="form-control-label" for="confirm_password">Confirm password</label>
-                                    <input type="password" id="confirm_password" class="form-control" name="password_confirmation" placeholder="Confirm password">
+                                    <input type="password" id="confirm_password" class="form-control"
+                                        name="password_confirmation" placeholder="Confirm password">
                                 </div>
                             </div>
                         </div>
