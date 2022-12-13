@@ -63,6 +63,7 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/user/create', 'UserController@create')->name('user.create');
     Route::post('/user', 'UserController@simpan')->name('user.simpan');
     Route::get('/user/edit/{id}', 'UserController@edit')->name('user.edit');
+    Route::post('/user/update/{id}', 'UserController@update')->name('user.update');
     //Route::get('/user/{id}', 'UserController@delete')->name('user.delete');
     Route::delete('user/{id}', 'UserController@delete')->name('user.delete');
 });

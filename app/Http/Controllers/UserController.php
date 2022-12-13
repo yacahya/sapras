@@ -42,7 +42,7 @@ class UserController extends Controller
         return view('user.edit', compact("data"));
     }
 
-    public function editsimpan(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $data = User::find($id);
         $data->update([
