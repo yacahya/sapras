@@ -14,57 +14,78 @@
             <form method="post" action="{{ url('instansi') }}" role="form">
                 @csrf
                 <div class="box-body">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Nama Kecamatan</label>
-                            <input class="form-control" type="text" name="nama_instansi" placeholder="Nama Kecamatan">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Nama Kecamatan</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="nama_instansi" placeholder="Nama Kecamatan">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="alamat" placeholder="Alamat">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Nama Camat</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="nama_camat" placeholder="Nama Camat">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Ibukota Kecamatan</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="ibukota" placeholder="Ibukota Kecamatan">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Luas Wilayah</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="luas" placeholder="Luas Wilayah">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Ketinggian</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="ketinggian" placeholder="Ketinggian">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Jumlah Desa</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="total_des" placeholder="Jumlah Desa">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Jumlah Kelurahan</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="total_kel" placeholder="Jumlah Kelurahan">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="" class="col-sm-2 col-form-label">Kontak Darurat</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="kontak_darurat" placeholder="Kontak Darurat">
+                                </div>
+                            </div>
+
                         </div>
-
-                        <div class="form-group">
-                            <label>Alamat</label>
-                            <input class="form-control" type="text" name="alamat" placeholder="Alamat">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Nama Camat</label>
-                            <input class="form-control" type="text" name="nama_camat" placeholder="Nama Camat">
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-6">
-
-                        <div class="form-group">
-                            <label>Ibukota Kecamatan</label>
-                            <input class="form-control" type="text" name="ibukota" placeholder="Ibukota Kecamatan">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Luas Wilayah</label>
-                            <input class="form-control" type="text" name="luas" placeholder="Luas Wilayah">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Ketinggian</label>
-                            <input class="form-control" type="text" name="ketinggian" placeholder="Ketinggian">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Jumlah Desa</label>
-                            <input class="form-control" type="text" name="total_des" placeholder="Jumlah Desa">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Jumlah Kelurahan</label>
-                            <input class="form-control" type="text" name="total_kel" placeholder="Jumlah Kelurahan">
-                        </div>
-
                     </div>
                 </div>
                 <!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
         </div>

@@ -1,5 +1,4 @@
 @extends('layouts.auth')
-
 @section('main-content')
 <div class="container">
     <div class="row justify-content-center">
@@ -10,7 +9,8 @@
                         <div class="col-lg-12">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">{{ __('Aplikasi Pelaporan Sarpras') }}</h1>
+                                    <img src="{{url('img/logo-garut.png')}}"class="col-sm-6 mb-2">
+                                    <h1 class="h4 text-gray-900 mb-4">{{ __('Aplikasi Pelaporan Sarana dan Prasarana (SIPONARA)') }}</h1>
                                 </div>
                                 <hr />
                                 @if ($errors->any())
@@ -33,12 +33,12 @@
                                         <input type="password" class="form-control form-control-user" name="password" placeholder="{{ __('Password') }}" required>
                                     </div>
 
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
                                             <input type="checkbox" class="custom-control-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                             <label class="custom-control-label" for="remember">{{ __('Remember Me') }}</label>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -49,21 +49,19 @@
                                     <hr>
                                 </form>
 
-                                <hr>
-
-                                @if (Route::has('password.request'))
+                                <!-- @if (Route::has('password.request'))
                                 <div class="text-center">
                                     <a class="small" href="{{ route('password.request') }}">
                                         {{ __('Forgot Password?') }}
                                     </a>
                                 </div>
-                                @endif
+                                @endif 
 
                                 @if (Route::has('register'))
                                 <div class="text-center">
                                     <a class="small" href="{{ route('register') }}">{{ __('Create an Account!') }}</a>
                                 </div>
-                                @endif
+                                @endif -->
                             </div>
                         </div>
                     </div>

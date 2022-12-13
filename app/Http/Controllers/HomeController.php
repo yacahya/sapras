@@ -35,4 +35,9 @@ class HomeController extends Controller
 
         return view('home', compact('widget'));
     }
+
+    public function welcome()
+    {
+        return view('welcome');
+    }
 }

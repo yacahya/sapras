@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Laporan;
 use Carbon\Carbon;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class LaporanController extends Controller
 {
@@ -15,11 +17,45 @@ class LaporanController extends Controller
 
     public function index()
     {
-        return view('laporan.index');
+        return view('laporan.status');
     }
+
+    public function table($status)
+    {
+        $data = Laporan::whereStatus($status)->get();
+        return view('laporan.index', compact('data'));
+    }
+
     public function tambah()
     {
-        return view('buat-laporan');
+        return view('laporan-bulanan');
+    }
+
+    public function darurat()
+    {
+        return view('laporan-darurat');
+    }
+
+    public function proses($id)
+    {
+        $data = Laporan::find($id);
+        $data->update([
+            'status' => 2
+        ]);
+        Alert::success('Berhasil', 'Data Berhasil Diupdate');
+
+
+        return redirect()->route('laporan')->withSuccess('Data Berhasil Diupdate');
+    }
+
+    public function terima($id)
+    {
+        $data = Laporan::find($id);
+        $data->update([
+            'status' => 3
+        ]);
+        Alert::success('Berhasil', 'Data Berhasil Diterima');
+        return redirect()->back();
     }
     public function riwayat()
     {
@@ -39,7 +75,7 @@ class LaporanController extends Controller
         if ($request->file('foto_bukti')) {
             $file = $request->file('foto_bukti');
             $filename = date('YmdHi') . "laporan" . $file->getClientOriginalName();
-            $file->storeAs('public/uploads/images/laporan/', $filename);
+            $file->storeAs('storage/uploads/images/laporan/', $filename);
         }
 
         $data = Laporan::create([
@@ -52,6 +88,7 @@ class LaporanController extends Controller
             "keterangan" => $request->keterangan,
             "status" => 1,
         ]);
+
         return redirect()->route('laporan-tambah')->withSuccess('Data Berhasil Dikirim');
     }
 }

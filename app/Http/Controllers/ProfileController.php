@@ -68,7 +68,7 @@ class ProfileController extends Controller
         if ($request->file('image')) {
             $file = $request->file('image');
             $filename = date('YmdHi') . "profile" . $file->getClientOriginalName();
-            $file->storeAs('public/uploads/images/profile/', $filename);
+          $file->storeAs('public/storage/uploads/images/profile', $filename);
             $user['image'] = $filename;
         }
         $user->save();

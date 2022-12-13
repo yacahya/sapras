@@ -59,12 +59,17 @@
                             <input class="form-control" type="text" name="total_kel" value="{{ $data->total_kel }}" placeholder="Jumlah Kelurahan">
                         </div>
 
+                        <div class="form-group">
+                            <label>Kontak Darurat</label>
+                            <input class="form-control" type="text" name="telpon" value="{{ $data->telpon }}" placeholder="Kontak Darurat">
+                        </div>
+
                     </div>
                 </div>
                 <!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
         </div>

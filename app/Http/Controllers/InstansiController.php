@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Instansi;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class InstansiController extends Controller
 {
@@ -29,7 +30,9 @@ class InstansiController extends Controller
             "ketinggian" => $request->ketinggian,
             "total_des" => $request->total_des,
             "total_kel" => $request->total_kel,
+            "telpon" => $request->telpon,
         ]);
+        Alert::success('Berhasil', 'Data Instansi Berhasil Ditambah');
         return redirect("instansi");
     }
 
@@ -51,7 +54,9 @@ class InstansiController extends Controller
             "ketinggian" => $request->ketinggian,
             "total_des" => $request->total_des,
             "total_kel" => $request->total_kel,
+            "telpon" => $request->telpon,
         ]);
+        Alert::success('Berhasil', 'Data Berhasil Diupdate');
         return redirect("instansi");
     }
 

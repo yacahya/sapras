@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('title','Laporan')
 @section('main-content')
-<h1 class="h3 mb-4 text-gray-800">{{ __('Buat Laporan Sarana Prasarana') }}</h1>
+<h1 class="h3 mb-4 text-gray-800">{{ __('Laporan Darurat Sarana Prasarana') }}</h1>
 @if (session('success'))
 <div class="alert alert-success border-left-success alert-dismissible fade show" role="alert">
     {{ session('success') }}
@@ -23,8 +23,7 @@
                     <div class="row">
                         <div class="col-lg-10">
                             <div class="form-group row">
-                                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal<span
-                                        class="small text-danger">*</span></label>
+                                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <h3>{{ Carbon\Carbon::now()->format('d-m-Y') }}</h3>
                                 </div>
@@ -35,16 +34,14 @@
                                 @enderror
                             </div>
                             <div class="form-group row">
-                                <label for="nama" class="col-sm-2 col-form-label">Nama Pelapor<span
-                                        class="small text-danger">*</span></label>
+                                <label for="nama" class="col-sm-2 col-form-label">Nama Pelapor<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="{{ Auth()->user()->name }}" readonly>
+                                    <input class="form-control" type="text" value="{{ Auth()->user()->fullName }}" readonly>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="name" class="col-sm-2 col-form-label">Instansi<span
-                                        class="small text-danger">*</span></label>
+                                <label for="name" class="col-sm-2 col-form-label">Instansi<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" type="text" name="id_instansi">
                                         <option value="">-- Pilih kecamatan --</option>
@@ -55,8 +52,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="nama_alat" class="col-sm-2 col-form-label">Nama Alat<span
-                                        class="small text-danger">*</span></label>
+                                <label for="nama_alat" class="col-sm-2 col-form-label">Nama Alat<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
                                     <select class="form-control" type="text" name="id_alat">
                                         <option value="">-- Pilih alat --</option>
@@ -68,9 +64,9 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="kondisi" class="col-sm-2 col-form-label">Kondisi<span
-                                        class="small text-danger">*</span></label>
+                                <label for="kondisi" class="col-sm-2 col-form-label">Kondisi<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
+
                                     <select class="form-control" type="text" name="id_kondisi">
                                         <option value="">-- Pilih Kondisi --</option>
                                         @foreach(App\Models\Kondisi::all() as $item)
@@ -86,11 +82,9 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="keterangan" class="col-sm-2 col-form-label">Keterangan<span
-                                        class="small text-danger">*</span></label>
+                                <label for="keterangan" class="col-sm-2 col-form-label">Keterangan<span class="small text-danger">*</span></label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" type="text" name="keterangan"
-                                        placeholder="Keterangan" rows="3"></textarea>
+                                    <textarea class="form-control" type="text" name="keterangan" placeholder="Keterangan" rows="3"></textarea>
                                     @error('keterangan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
