@@ -11121,3 +11121,173 @@ Did you mean one of these?
 #52 C:\\laragon\\www\\sapras\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
 "} 
+[2022-12-13 17:02:00] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:00] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:00] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:00] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:00] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:00] local.ERROR: Uncaught ReflectionException: Class "view" does not exist in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): ReflectionClass->__construct()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\Container\Container->build()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\Container\Container->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\Container\Container->make()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\Foundation\Application->make()
+#6 Command line code(1): app()
+#7 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [view] does not exist. in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\Container\Container->build()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\Container\Container->resolve()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\Container\Container->make()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\Foundation\Application->make()
+#5 Command line code(1): app()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class \"view\" does not exist in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): ReflectionClass->__construct()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\\Container\\Container->build()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\\Container\\Container->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\\Container\\Container->make()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make()
+#6 Command line code(1): app()
+#7 {main}
+
+Next Illuminate\\Contracts\\Container\\BindingResolutionException: Target class [view] does not exist. in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\\Container\\Container->build()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\\Container\\Container->resolve()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\\Container\\Container->make()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make()
+#5 Command line code(1): app()
+#6 {main}
+  thrown at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:877)
+[stacktrace]
+#0 {main}
+"} 
+[2022-12-13 17:02:30] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:30] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2022-12-13 17:02:30] local.ERROR: Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Auth\Access\Gate] is not instantiable. in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:1087
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(884): Illuminate\Container\Container->notInstantiable()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\Container\Container->build()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\Container\Container->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\Container\Container->make()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(1415): Illuminate\Foundation\Application->make()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(222): Illuminate\Container\Container->offsetGet()
+#7 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(193): Illuminate\Support\Facades\Facade::resolveFacadeInstance()
+#8 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(331): Illuminate\Support\Facades\Facade::getFacadeRoot()
+#9 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic()
+#10 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Illuminate\\Contracts\\Container\\BindingResolutionException: Target [Illuminate\\Contracts\\Auth\\Access\\Gate] is not instantiable. in /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:1087
+Stack trace:
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(884): Illuminate\\Container\\Container->notInstantiable()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(756): Illuminate\\Container\\Container->build()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(855): Illuminate\\Container\\Container->resolve()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): Illuminate\\Container\\Container->make()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php(1415): Illuminate\\Foundation\\Application->make()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(222): Illuminate\\Container\\Container->offsetGet()
+#7 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(193): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance()
+#8 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(331): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#9 Command line code(1): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#10 {main}
+  thrown at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Container/Container.php:1087)
+[stacktrace]
+#0 {main}
+"} 
+[2022-12-13 17:02:34] local.ERROR: Class "RealRashid\SweetAlert\SweetAlertServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"RealRashid\\SweetAlert\\SweetAlertServiceProvider\" not found at /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(663): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(239): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/ronierone/Documents/Projects/Laravel/sapras/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/ronierone/Documents/Projects/Laravel/sapras/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
